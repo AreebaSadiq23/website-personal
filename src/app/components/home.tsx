@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <section id="home" className={styles.home}>
       <div className={styles.homeContent}>
-        <h1>Hi 👋 I'm Areeba</h1>
+        <h1>Hi 👋 I&apos;m Areeba</h1>
         <div className={styles.textChange}>
-          <h3>And I'm</h3>
+          <h3>And I&apos;m</h3>
           <h3>
             <span className={styles.word}>Frontend Developer</span>
           </h3>
