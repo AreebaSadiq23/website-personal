@@ -1,0 +1,74 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10%;
+}
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoSection h1 {
+  font-family: 'ShadCN-Style', sans-serif;
+  font-size: 1.5rem;
+  color:palevioletred;
+}
+
+.logoSection span {
+  font-size: 1rem;
+  color: pink;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color:palevioletred;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #74b9ff; 
+}
+.linkText {
+  color: #fff; 
+  font-size: 20px; 
+  text-decoration: none; 
+  display: block; 
+  text-align: center; 
+}
+
+.overlay:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+  }
+
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .nav a {
+    margin: 0.5rem 0; 
+  }
+}
+
+
+  

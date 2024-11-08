@@ -1,0 +1,169 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-image: url('/img 1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+.homeContent {
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 6px double #800080;
+  margin: 0 auto;
+}
+
+.homeContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.textChange h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.typingText {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #800080;
+}
+
+.typingText span {
+  display: inline-block;
+  animation: fade-in 2s infinite alternate;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btnBox {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #800080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 48px 0;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: #5a005a;
+}
+
+/* Responsive Styles for Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+  .home {
+    padding: 40px;
+  }
+
+  .homeContent {
+    max-width: 700px;
+    padding: 25px;
+  }
+
+  .homeContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .textChange h3 {
+    font-size: 1.4rem;
+  }
+
+  .typingText {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .homeContent {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .homeContent h1 {
+    font-size: 2rem;
+  }
+
+  .textChange h3 {
+    font-size: 1.2rem;
+  }
+
+  .typingText {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .btnBox {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 20px;
+  }
+
+  .homeContent {
+    padding: 15px;
+  }
+
+  .homeContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .textChange h3 {
+    font-size: 1rem;
+  }
+
+  .typingText {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 7px 14px;
+  }
+
+  .btnBox {
+    margin-top: 10px;
+  }
+}
